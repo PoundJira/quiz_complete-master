@@ -55,7 +55,7 @@ public class RegisterFragment extends Fragment{
                             Log.d("Register","SUCCESS");
                             sendVerifiedEmail(authResult.getUser());
                             Toast.makeText(getActivity() , "สำเร็จ" , Toast.LENGTH_SHORT).show();
-                            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.main_view, new LoginFragment()).addToBackStack(null).commit();
+                            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.main_view, new BmiFragment()).addToBackStack(null).commit();
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
